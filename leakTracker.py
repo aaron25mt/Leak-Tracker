@@ -22,8 +22,7 @@ def writeToSet(id):
 
 def generateSet():
     with open("checkedAlbums.txt") as f:
-        already_done = [x.strip("\n") for x in f.readlines()]
-        return already_done
+        return [x.strip("\n") for x in f.readlines()]
 
 
 def sendEmail(username, password, phonenum):
